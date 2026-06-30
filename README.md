@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://brands.home-assistant.io/_/homeassistant/logo.png" alt="Home Assistant Logo" width="120"/>
-</p>
-
 <h1 align="center">Home Assistant — Kiro Power</h1>
 
 <p align="center">
