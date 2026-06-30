@@ -70,16 +70,26 @@ https://github.com/crgreenwood/home-assistant-kiro-power
 4. Select **Import power from a folder**
 5. Select the cloned directory
 
-## Prerequisites
+## Setup — Just ask Kiro!
 
-- **Home Assistant** instance (any installation type)
-- **Python 3.11+** with [`uvx`](https://docs.astral.sh/uv/getting-started/installation/) installed
-- **Long-Lived Access Token** from your Home Assistant profile
-- Network access from your machine to your HA instance
+Once installed, **you don't need to configure anything manually**. Just start a chat and say:
 
-## Configuration
+> *"Set up my Home Assistant power"*
 
-After installation, update the MCP configuration with your Home Assistant details:
+Kiro will guide you through the entire setup interactively:
+
+1. **Check prerequisites** — verifies Python 3.11+ and `uvx` are installed, and offers to install anything missing
+2. **Create a token** — walks you through generating a Long-Lived Access Token in your HA profile
+3. **Configure the connection** — updates the MCP config with your HA URL and token
+4. **Verify it works** — calls your Home Assistant to confirm everything is connected
+
+That's it. No manual JSON editing required.
+
+---
+
+### Manual configuration (optional)
+
+If you prefer to configure it yourself, update the MCP config with your Home Assistant details:
 
 ```json
 {
@@ -101,6 +111,11 @@ After installation, update the MCP configuration with your Home Assistant detail
 2. Click your profile (bottom-left)
 3. Scroll to **Long-Lived Access Tokens**
 4. Click **Create Token** → copy it
+
+**Prerequisites:**
+- **Home Assistant** instance (any installation type)
+- **Python 3.11+** with [`uvx`](https://docs.astral.sh/uv/getting-started/installation/) installed
+- Network access from your machine to your HA instance
 
 ## Power Structure
 
