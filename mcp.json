@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "ha-mcp": {
+      "command": "uvx",
+      "args": ["ha-mcp@latest"],
+      "env": {
+        "HOMEASSISTANT_URL": "YOUR_HOMEASSISTANT_URL",
+        "HOMEASSISTANT_TOKEN": "YOUR_LONG_LIVED_ACCESS_TOKEN"
+      }
+    }
+  }
+}
